@@ -9,7 +9,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/products")
+    fetch("https://product-app-m7gu.onrender.com/products")
       .then(res => res.json())
       .then(data => {
         const withColor = data.map(p => ({ ...p, selectedColor: 'yellow' }));
